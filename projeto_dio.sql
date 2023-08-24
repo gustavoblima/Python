@@ -160,4 +160,4 @@ select concat(Fname,' ',Lname) as Client, idOrder as Request, orderStatus as Sta
 
 select count(*) from clients c, orders o where c.idClient = idOrderClient group by idOrder;
 
-select * from clients c inner join orders o ON c.idClient = o.idOrderClient inner join productOrder p on p.idPOorder = o.idOrder;
+select * from clients c inner join orders o ON c.idClient = o.idOrderClient inner join productOrder p on p.idPOorder = o.widOrder;
